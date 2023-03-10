@@ -65,6 +65,8 @@
       const source = new MediaElementAudioSourceNode(audioCtx, {
         mediaElement: audioElt,
       });
+      // or you can create a source by this way
+      // const source = audioCtx.createMediaElementSource(audioElt)
 
       // Create a gain node and set it's gain value to 0.5
       const gainNode = new GainNode(audioCtx, { gain: 0.5 });
